@@ -1,9 +1,10 @@
 .blockGirl{
     background: #e6f7fe; 
     background-image: url(../../../assets/img/img-cloud.png);
-    background-position: center;
+    background-position: center bottom;
     background-repeat: repeat-x;
     padding-top: 100px;
+    height: 620px;
 }
 .blockGirl .main-text h1{
     font-size: 47px;
@@ -52,6 +53,12 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
+    top: -20px;
+}
+.girl{
+    position: relative;
+    z-index: 1;
 }
 .blue-line input{
     height: 40px;
@@ -100,17 +107,15 @@
     font-family: "Poppins";
     text-align: center;
     border: none;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .input-container {
     position: relative;
-
 }
 .input-container input {
     text-align: center;
     position: relative;
 }
-
 .input-container::before,
 .input-container::after {
     content: '';
@@ -121,12 +126,10 @@
     height: 60%;
     background-color: #d8dadb;
 }
-
 .input-container::before {
     left: 40px;
     z-index: 1; 
 }
-
 .input-container::after {
     right: 40px;
 }
