@@ -1,0 +1,55 @@
+.hoveit{
+    padding: 60px 0;
+    text-align: center;
+
+    h6{
+        font-size: 16px;
+        color: #0287c3;
+        font-weight: 400;
+        font-family: "Poppins";
+        padding-bottom: 20px;
+    }
+    h2{
+        font-size: 40px;
+        color: #323538;
+        font-weight: 500;
+        font-family: "Poppins";
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .steps{
+
+        .arrow_step{
+            position: absolute;
+            top: 0px;
+            right: -20px;
+            padding-top: 30px;
+        }
+
+        .step{
+            padding: 40px;
+            position: relative;
+    
+            img{
+                padding-bottom: 30px;
+            }
+            h3{
+                font-size: 17px;
+                text-transform: uppercase;
+                color: #1e2021;
+                font-weight: 600;
+                font-family: "Poppins";
+                text-align: center;
+            }
+            p{
+                font-size: 18px;
+                line-height: 20px;
+                color: #51555a;
+                font-weight: 400;
+                font-family: "Poppins";
+                text-align: center;
+            }
+            
+        }
+    }
+}

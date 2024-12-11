@@ -32,10 +32,29 @@
                 <input type="text" placeholder="21 days" id="input-name">
             </div>
             <div class="input-container">
-                <label for="imput-name">Number of pages</label>
-                <div class="cross"></div>
-                <div class="cross2"></div>
-                <input type="text" placeholder="2" id="input-name">
+                <div
+                    class="counter"
+                    style="display: flex; align-items: center; border: 1px solid #ddd; border-radius: 5px; background-color: #f7f7f7; overflow: hidden; width: 120px; justify-content: space-between;"
+                >
+                    <button
+                    onclick="this.nextElementSibling.innerText = Math.max(Number(this.nextElementSibling.innerText) - 1, 0)"
+                    style="background: none; border: none; padding: 10px; cursor: pointer; font-size: 16px; color: #555; width: 40px; text-align: center;"
+                    onmouseover="this.style.backgroundColor='#e6e6e6'"
+                    onmouseout="this.style.backgroundColor=''"
+                    >−</button>
+                
+                    <span
+                    id="count"
+                    style="flex: 1; text-align: center; font-size: 16px; font-weight: bold; color: #333; background-color: #f7f7f7;"
+                    >2</span>
+                
+                    <button
+                    onclick="this.previousElementSibling.innerText = Number(this.previousElementSibling.innerText) + 1"
+                    style="background: none; border: none; padding: 10px; cursor: pointer; font-size: 16px; color: #555; width: 40px; text-align: center;"
+                    onmouseover="this.style.backgroundColor='#e6e6e6'"
+                    onmouseout="this.style.backgroundColor=''"
+                    >+</button>
+                </div>
             </div>
             <button class="continue">Continue</button>
         </div>
