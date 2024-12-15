@@ -1,0 +1,118 @@
+footer{
+    filter: drop-shadow(0px 1px 2.5px rgba(0,0,0,0.1));
+    background-color: #03a9f3;
+    padding: 20px 0 20px 0;
+    margin-top: 50px;
+    .logo{
+        float: left;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        ul{
+            display: flex;
+            margin-top: 30px;
+
+            li{
+                margin-right: 60px;
+                font-size: 12px;
+                letter-spacing: 0px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-weight: 500;
+                font-family: Poppins-Regular;
+                cursor: pointer;
+            }
+            li::after{
+                border: none;
+            }
+        }
+    }
+    hr{
+        height: 1px;
+        background-color: #ffffff;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .section{
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Poppins-Medium";
+        margin-bottom: 30px;
+        ul li{
+            font-size: 13px;
+            line-height: 28px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Poppins-Regular";
+            margin-left: -30px;
+        }
+    }
+    .copyright{
+        font-size: 13px;
+        line-height: 21px;
+        color: #ffffff;
+        font-family: "museosans";
+    }
+    .facebook{
+        margin-right: 10px;
+        &:hover{
+            content: url(../../../assets/img/facebook-hover.png);
+        }
+    }
+    .twitter{
+        margin-right: 10px;
+        &:hover{
+            content: url(../../../assets/img/twitter-hover.png);
+        }
+    }
+    .pinterest{
+        margin-right: 10px;
+        &:hover{
+            content: url(../../../assets/img/pinterest-hover.png);
+        }
+    }
+    .google-plus{
+        margin-right: 10px;
+        &:hover{
+            content: url(../../../assets/img/google-plus-hover.png);
+        }
+    }
+    .phone-img,
+    .email-img{
+        float: left;
+    }
+    .phone-text{
+        padding-left: 50px;
+        font-size: 13px;
+        line-height: 5px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Poppins-Regular";
+        .number{
+            font-size: 16px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-family: "Poppins-Bold";
+        }
+    }
+    .email{
+        padding-left: 50px;
+        font-size: 13px;
+        line-height: 5px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Poppins-Regular";
+        .number{
+            font-size: 16px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-family: "Poppins-Bold";
+        }
+    }
+}
