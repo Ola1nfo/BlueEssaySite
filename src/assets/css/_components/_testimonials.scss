@@ -1,0 +1,53 @@
+.testimonials{
+    margin-top: 320px;
+    text-align: center;
+
+    h6{
+        font-size: $h6-font-size;
+        color: #0287c3;
+        font-weight: 400;
+        font-family: "Poppins-Regular";
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: $h2-font-size;
+        color: #323538;
+        font-weight: 500;
+        font-family: "Poppins-Bold";
+        margin-bottom: 50px;
+    }
+    .photo{
+        width: 100px;
+        margin-bottom: 30px;
+    }
+    .response{
+        font-size: 14px;
+        line-height: 22px;
+        color: #51555a;
+        font-weight: 300;
+        font-family: "Poppins-Regular";
+        max-width: 50%;
+        margin-bottom: 30px;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h4{
+        font-size: 17px;
+        color: #0287c3;
+        font-weight: 600;
+        font-family: "Poppins-Medium";
+        margin-bottom: 10px;
+        margin-top: 130px;
+    }
+    .data{
+        font-size: 13px;
+        color: #a3a6a9;
+        font-weight: 300;
+        font-family: "Poppins-Regular";
+    }
+    .carousel-control-prev{
+
+    }
+}
