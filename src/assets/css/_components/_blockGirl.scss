@@ -55,49 +55,40 @@
     align-items: center;
     position: relative;
     top: -20px;
+    
+    p{
+        font-size: 13px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "Poppins-Regular";
+        margin: 0;
+    }
+    select{
+        width: 202px;
+        height: 50px;
+        border-radius: 3px;
+        background-color: #f6f9f9;
+        border: 1px solid #d8dadb;
+        font-size: 13px;
+        color: #656a70;
+        font-weight: 400;
+        font-family: "Poppins-Regular";
+        padding: 0 10px;
+        padding-right: 20px;
+    }
+    .counter{
+        margin-top: 20px;
+        // width: 202px;
+        height: 50px;
+    }
 }
 .girl{
     position: relative;
     z-index: 1;
 }
-.blue-line input{
-    height: 40px;
-    font-size: 13px;
-    border-radius: 2px;
-    border: none;
-    color: #656a70;
-    font-weight: 400;
-    font-family: "Poppins";
-    padding: 10px;
-    position: relative;
-}
-.blue-line input {
-    height: 40px;
-    font-size: 13px;
-    border-radius: 2px;
-    border: none;
-    color: #656a70;
-    font-weight: 400;
-    font-family: "Poppins";
-    padding: 10px;
-    background: #ffffff url(../../../assets/img/free-icon-down-chevron-10728680.png) no-repeat right 10px center;
-    background-size: 12px 8px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-.blue-line input:nth-child(4){
-    background: #ffffff
-}
-.blue-line label{
-    display: block;
-    font-size: 13px;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: "Poppins";
-    margin-bottom: 5px;
-}
 .continue{
-    height: 40px;
+    width: 202px;
+    height: 50px;
     border-radius: 3px;
     background-color: #0187c3;
     width: 178px;
@@ -107,58 +98,5 @@
     font-family: "Poppins";
     text-align: center;
     border: none;
-    margin-top: 25px;
-}
-.input-container {
-    position: relative;
-}
-.input-container input {
-    text-align: center;
-    position: relative;
-}
-.input-container::before,
-.input-container::after {
-    content: '';
-    position: absolute;
-    top: 40px;
-    transform: translateY(-38%);
-    width: 1px;
-    height: 60%;
-    background-color: #d8dadb;
-}
-.input-container::before {
-    left: 40px;
-    z-index: 1; 
-}
-.input-container::after {
-    right: 40px;
-}
-.cross {
-    background: #d8dadb;
-    height: 15px;
-    position: absolute;
-    top: 34px;
-    left: 155px;
-    width: 2px;
-    z-index: 1;
-}
-.cross::after {
-    content: "";
-    background: #d8dadb;
-    height: 2px;
-    left: -6px;
-    position: absolute;
-    top: 7px;
-    width: 15px;
-}
-.cross2::after {
-    content: "";
-    background: #d8dadb;
-    height: 2px;
-    left: -9px;
-    position: absolute;
-    top: 43px;
-    left: 13px;
-    width: 15px;
-    z-index: 1;
+    margin-top: 20px;
 }
