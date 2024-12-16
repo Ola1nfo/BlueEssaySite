@@ -23,7 +23,7 @@
     .response{
         font-size: 14px;
         line-height: 22px;
-        color: #51555a;
+        color: $p-color;
         font-weight: 300;
         font-family: "Poppins-Regular";
         max-width: 50%;
@@ -46,8 +46,5 @@
         color: #a3a6a9;
         font-weight: 300;
         font-family: "Poppins-Regular";
-    }
-    .carousel-control-prev{
-
     }
 }

@@ -1,6 +1,6 @@
 header{
     filter: drop-shadow(0px 1px 2.5px rgba(0,0,0,0.1));
-    background-color: #03a9f3;
+    background-color: $bg-color-blue;
     padding: 10px 0 20px 0;
 }
 .logo{
@@ -23,8 +23,11 @@ nav ul li{
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 600;
-    font-family: Poppins-Regular;
+    font-family: 'Poppins-Regular';
     cursor: pointer;
+    &:hover{
+        color: $bg-btn1;
+    }
 }
 nav ul li::after{
     content: '';
@@ -44,41 +47,49 @@ nav ul li:nth-child(3):after{
     margin-top: 10px;
     margin-right: 40px;
     cursor: pointer;
+    &:hover{
+        content: url(../../../assets/img/phone-hover.png);
+    }
 }
 .signIn{
     width: 100px;
     height: 40px;
     border-radius: 3px;
-    background-color: rgba(1,135,195);
-    border: 1px solid #1088c7;
+    background-color: $bg-btn1;
     padding-top: 10px;
     font-size: 12px;
     letter-spacing: 0px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 600;
-    font-family: Poppins_Regular;
+    font-family: 'Poppins-Regular';
     text-align: center;
     margin-top: 10px;
     margin-right: 20px;
     cursor: pointer;
+    &:hover{
+        background-color: $bg-btn1-hover;
+    }
 }
 .order{
     width: 100px;
     height: 40px;
     border-radius: 3px;
-    background-color: #f75e2d;
+    background-color: $bg-btn2;
     padding-top: 10px;
     font-size: 12px;
     letter-spacing: 0px;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 600;
-    font-family: Poppins_Regular;
+    font-family: 'Poppins-Regular';
     text-align: center;
     margin-top: 10px;
     margin-right: 40px;
     cursor: pointer;
+    &:hover{
+        background-color: $bg-btn2-hover;
+    }
 }
 .burger{
     margin-top: 10px;

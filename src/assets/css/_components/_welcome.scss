@@ -6,20 +6,20 @@
     font-size: 16px;
     color: #0287c3;
     font-weight: 400;
-    font-family: "Poppins";
+    font-family: "Poppins-Regular";
 }
 .welcome h2{
     font-size: 40px;
     color: #1e2021;
     font-weight: 900;
-    font-family: "Poppins";
+    font-family: "Poppins-Bold";
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .welcome p{
     font-size: 20px;
     line-height: 22px;
-    color: #51555a;
+    color: $p-color;
     font-weight: 400;
-    font-family: "Poppins";
+    font-family: "Poppins-Regular";
 }

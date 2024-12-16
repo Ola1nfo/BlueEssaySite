@@ -3,17 +3,17 @@
     text-align: center;
 
     h6{
-        font-size: 16px;
+        font-size: $h6-font-size;
         color: #0287c3;
         font-weight: 400;
-        font-family: "Poppins";
+        font-family: "Poppins-Regular";
         padding-bottom: 20px;
     }
     h2{
         font-size: 40px;
         color: #323538;
         font-weight: 500;
-        font-family: "Poppins";
+        font-family: "Poppins-Bold";
         text-align: center;
         padding-bottom: 40px;
     }
@@ -38,15 +38,15 @@
                 text-transform: uppercase;
                 color: #1e2021;
                 font-weight: 600;
-                font-family: "Poppins";
+                font-family: "Poppins-Medium";
                 text-align: center;
             }
             p{
                 font-size: 18px;
                 line-height: 20px;
-                color: #51555a;
+                color: $p-color;
                 font-weight: 400;
-                font-family: "Poppins";
+                font-family: "Poppins-Regular";
                 text-align: center;
             }
             

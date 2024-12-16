@@ -49,6 +49,10 @@ footer{
             font-weight: 400;
             font-family: "Poppins-Regular";
             margin-left: -30px;
+            &:hover{
+                cursor: pointer;
+                color: $p-color;
+            }
         }
     }
     .copyright{
