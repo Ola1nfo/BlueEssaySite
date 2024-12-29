@@ -186,6 +186,7 @@
         }
         .accordion-item{
             background-color: $bg-color-blue;
+            margin-bottom: -20px;
         }
         .accordion{
             border-top: 3px solid $bg-color-blue;
@@ -202,6 +203,193 @@
         }
         .list-group{
             border-top: 3px solid $bg-color-blue;
+        }
+        img{
+            width: 100%;
+        }
+        h4{
+            padding-top: 10px;
+            margin-bottom: 0;
+            font-size: 17px;
+            letter-spacing: 0px;
+            line-height: 38px;
+            color: #1e2021;
+            font-weight: 500;
+            font-family: "Poppins-Medium";
+        }
+        p{
+            margin-top: -10px;
+            font-size: 13px;
+            letter-spacing: 0px;
+            line-height: 38px;
+            color: #a3a6a9;
+            font-family: "Poppins-Regular";
+        }
+        hr{
+            height: 3px;
+            color: $bg-color-blue;
+            margin-bottom: 30px;
+        }
+        .second-block{
+            margin-top: 50px;
+            background-color: #0287c3;
+            border-radius: 10px;
+            padding: 30px;
+            height: 570px;
+            position: relative;
+            .dashed{
+                padding: 30px;
+                border: 3px dashed #ffffff;
+                background-image: url(../../../assets/img/star-sky.jpg);
+                border-radius: 20px;
+                position: relative;
+                animation: moveBackgroundDashed 60s infinite linear;
+                @keyframes moveBackgroundDashed {
+                    0% {
+                        background-position: 0 0;
+                    }
+                    100% {
+                        background-position: 100% 100%;
+                    }
+                }
+                h4{
+                    font-size: 24px;
+                    letter-spacing: 0px;
+                    line-height: 19px;
+                    color: #ffffff;
+                    font-family: "Poppins-Medium";
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                .scissors{
+                    position: absolute;
+                    top: -20px;
+                    left: -16px;
+                    width: 50px;
+                    animation: moveScissors 10s infinite linear, cutEffect 0.5s infinite linear;
+                    @keyframes moveScissors {
+                        0% {
+                            top: -20px;
+                            left: -16px;
+                        }
+                        25% {
+                            top: -20px;
+                            left: 100%;
+                            transform: rotate(180deg);
+                        }
+                        50% {
+                            top: 100%;
+                            left: 100%;
+                        }
+                        75% {
+                            top: 100%;
+                            left: -16px;
+                        }
+                        100% {
+                            top: -20px;
+                            left: -16px;
+                        }
+                    }
+                    
+                    @keyframes cutEffect {
+                        0%, 100% {
+                            transform: rotate(0deg);
+                        }
+                        50% {
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+                .prozent{
+                    font-size: 55px;
+                    line-height: 57px;
+                    color: #e2f55d;
+                    font-family: "Poppins-Bold";
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin-top: -10px;
+                    span{
+                        vertical-align: super;
+                        font-size: 40px;
+                    }
+                }
+                .under{
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #ffffff;
+                    font-weight: 500;
+                    font-family: "Poppins-Regular";
+                    text-align: center;
+                    margin-top: -10px;
+                    margin-bottom: 300px;
+                    text-transform: uppercase;
+                }
+            }
+            .raketa{
+                position: absolute;
+                bottom: -2px;
+                left: 0px;
+            }
+        }
+        .advantages-li{
+            li{
+                font-size: 18px;
+                letter-spacing: 0px;
+                line-height: 22px;
+                color: $p-color;
+                font-family: "Font Awesome";
+                position: relative;
+                line-height: 30px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../../assets/img/marker.png) no-repeat center center;
+                    background-size: contain;
+                }
+            }
+        }
+        .under-button{
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+            border-radius: 3px;
+            background-color: $bg-btn1;
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 500;
+            font-family: "Poppins-Regular";
+            text-align: center;
+            border: none;
+            &:hover{
+                background-color: $bg-btn1-hover;
+            }
+        }
+        .paper-li{
+            li{
+                font-size: 18px;
+                letter-spacing: 0px;
+                line-height: 22px;
+                color: $p-color;
+                font-family: "Font Awesome";
+                position: relative;
+                line-height: 30px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../../assets/img/marker2.png) no-repeat center center;
+                    background-size: contain;
+                }
+            }
         }
     }
 }
