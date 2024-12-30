@@ -22,8 +22,12 @@ footer{
                 text-transform: uppercase;
                 color: #ffffff;
                 font-weight: 500;
-                font-family: Poppins-Regular;
+                font-family: "Poppins-Regular";
                 cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: #ffffff;
+                }
             }
             li::after{
                 border: none;
