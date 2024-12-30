@@ -1,0 +1,103 @@
+.help{
+    margin-top: 50px;
+    h3{
+        font-size: 33px;
+        color: #323538;
+        font-weight: 500;
+        font-family: "Poppins-Medium";
+        margin-bottom: 20px;
+    }
+    h6{
+        font-size: 20px;
+        line-height: 30px;
+        color: #51555a;
+        font-weight: 500;
+        font-family: "Poppins-Regular";
+        text-align: left;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 22px;
+        color: $p-color;
+        font-weight: 400;
+        font-family: "Poppins-Regular";
+    }
+    .list{
+        font-size: 15px;
+        line-height: 30px;
+        color: #51555a;
+        font-family: "Poppins-Regular";
+        margin-bottom: 30px;
+        .list1{
+            li{
+                position: relative;
+                margin-left: 30px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../../assets/img/marker3.png) no-repeat center center;
+                    background-size: contain;
+                    animation: pulse 1.5s infinite;
+                }
+            }
+        }
+        .list2{
+            li{
+                position: relative;
+                margin-left: 30px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 16px;
+                    height: 16px;
+                    background: url(../../../assets/img/marker4.png) no-repeat center center;
+                    background-size: contain;
+                    animation: pulse 1.5s infinite;
+                    @keyframes pulse {
+                        0% {
+                            transform: translateY(-50%) scale(1); /* Початковий розмір */
+                            opacity: 1;
+                        }
+                        50% {
+                            transform: translateY(-50%) scale(1.2); /* Збільшення */
+                            opacity: 0.7; /* Легке зникання */
+                        }
+                        100% {
+                            transform: translateY(-50%) scale(1); /* Повернення до початкового розміру */
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h4{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .blue-text{
+        background-color: #e5f7fd;
+        p{
+            padding: 20px;
+            font-size: 17px;
+            line-height: 26px;
+            color: $bg-color-blue;
+            font-weight: 400;
+            font-family: "Poppins-Regular";
+        }
+    }
+    h5{
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+}
