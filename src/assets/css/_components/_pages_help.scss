@@ -44,7 +44,7 @@
                     height: 16px;
                     background: url(../../../assets/img/marker3.png) no-repeat center center;
                     background-size: contain;
-                    animation: pulse 1.5s infinite;
+                    animation: pulse-li 1.5s infinite;
                 }
             }
         }
@@ -63,17 +63,17 @@
                     background: url(../../../assets/img/marker4.png) no-repeat center center;
                     background-size: contain;
                     animation: pulse 1.5s infinite;
-                    @keyframes pulse {
+                    @keyframes pulse-li {
                         0% {
-                            transform: translateY(-50%) scale(1); /* Початковий розмір */
+                            transform: translateY(-50%) scale(1);
                             opacity: 1;
                         }
                         50% {
-                            transform: translateY(-50%) scale(1.2); /* Збільшення */
-                            opacity: 0.7; /* Легке зникання */
+                            transform: translateY(-50%) scale(1.2);
+                            opacity: 0.7;
                         }
                         100% {
-                            transform: translateY(-50%) scale(1); /* Повернення до початкового розміру */
+                            transform: translateY(-50%) scale(1);
                             opacity: 1;
                         }
                     }
