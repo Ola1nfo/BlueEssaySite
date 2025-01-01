@@ -28,9 +28,9 @@ footer{
                     text-decoration: none;
                     color: #ffffff;
                 }
-            }
-            li::after{
-                border: none;
+                &::after{
+                    border: none;
+                }
             }
         }
     }
