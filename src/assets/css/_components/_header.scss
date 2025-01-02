@@ -5,6 +5,9 @@ header{
 }
 .logo{
     float: left;
+    @media screen and (max-width: 576px){
+        content: url(../../../assets/img/logo-sm.png);
+    }
 }
 nav{
     display: flex;
@@ -24,6 +27,12 @@ nav ul{
     font-weight: 600;
     font-family: "Poppins-Regular";
     margin-right: 20px;
+    @media screen and (max-width: 1200px){
+        font-size: 12px;
+    }
+    @media screen and (max-width: 992px){
+        display: none;
+    }
 }
 .dropdown-menu{
     background-color: $bg-btn1;
@@ -36,13 +45,19 @@ nav ul{
         content: url(../../../assets/img/phone-hover.png);
         animation: shake-phone 0.5s ease-in-out;
     }
-}
-@keyframes shake-phone {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(10deg); }
-    50% { transform: rotate(-10deg); }
-    75% { transform: rotate(10deg); }
-    100% { transform: rotate(0deg); }
+    @keyframes shake-phone {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(10deg); }
+        50% { transform: rotate(-10deg); }
+        75% { transform: rotate(10deg); }
+        100% { transform: rotate(0deg); }
+    }
+    @media screen and (max-width: 992px){
+        margin-right: 10px;
+    }
+    @media screen and (max-width: 350px){
+        margin-left: -30px;   
+    }
 }
 .signIn{
     width: 100px;
@@ -63,6 +78,9 @@ nav ul{
     &:hover{
         background-color: $bg-btn1-hover;
     }
+    @media screen and (max-width: 992px){
+        margin-right: 10px;
+    }
 }
 .order{
     width: 100px;
@@ -82,6 +100,9 @@ nav ul{
     cursor: pointer;
     &:hover{
         background-color: $bg-btn2-hover;
+    }
+    @media screen and (max-width: 992px){
+        margin-right: 0px;
     }
 }
 .burger{

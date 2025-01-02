@@ -1,10 +1,15 @@
 footer{
-    filter: drop-shadow(0px 1px 2.5px rgba(0,0,0,0.1));
     background-color: #03a9f3;
     padding: 20px 0 20px 0;
     margin-top: 50px;
+    @media screen and (max-width: 576px){
+        text-align: center;
+    }
     .logo{
         float: left;
+    }
+    .dropstart{
+        display: none;
     }
     nav{
         display: flex;
@@ -30,6 +35,9 @@ footer{
                 }
                 &::after{
                     border: none;
+                }
+                @media screen and (max-width: 992px){
+                    margin-right: 20px;
                 }
             }
         }
@@ -65,33 +73,47 @@ footer{
         color: #ffffff;
         font-family: "museosans";
     }
-    .facebook{
-        margin-right: 10px;
-        &:hover{
-            content: url(../../../assets/img/facebook-hover.png);
+    .link-img{
+        padding-bottom: 20px;
+        .facebook{
+            margin-right: 10px;
+            &:hover{
+                content: url(../../../assets/img/facebook-hover.png);
+            }
+        }
+        .twitter{
+            margin-right: 10px;
+            &:hover{
+                content: url(../../../assets/img/twitter-hover.png);
+            }
+        }
+        .pinterest{
+            margin-right: 10px;
+            &:hover{
+                content: url(../../../assets/img/pinterest-hover.png);
+            }
+        }
+        .google-plus{
+            margin-right: 10px;
+            &:hover{
+                content: url(../../../assets/img/google-plus-hover.png);
+            }
         }
     }
-    .twitter{
-        margin-right: 10px;
-        &:hover{
-            content: url(../../../assets/img/twitter-hover.png);
-        }
-    }
-    .pinterest{
-        margin-right: 10px;
-        &:hover{
-            content: url(../../../assets/img/pinterest-hover.png);
-        }
-    }
-    .google-plus{
-        margin-right: 10px;
-        &:hover{
-            content: url(../../../assets/img/google-plus-hover.png);
+    .footer-phone{
+        @media screen and (max-width: 576px){
+            display: flex;
+            justify-content: center;
         }
     }
     .phone-img,
     .email-img{
         float: left;
+        padding-right: 20px;   
+        @media screen and (max-width: 576px){
+            width: 50px;
+            height: 35px;
+        }    
     }
     .phone-text{
         padding-left: 50px;
@@ -106,6 +128,12 @@ footer{
             text-transform: uppercase;
             color: #ffffff;
             font-family: "Poppins-Bold";
+            @media screen and (max-width: 1200px){
+                font-size: 12px;
+            }
+        }
+        @media screen and (max-width: 992px){
+            padding-left: 0;
         }
     }
     .email{
@@ -121,6 +149,33 @@ footer{
             text-transform: uppercase;
             color: #ffffff;
             font-family: "Poppins-Bold";
+            @media screen and (max-width: 1200px){
+                font-size: 12px;
+            }
+        }
+        @media screen and (max-width: 992px){
+            padding-left: 0;
+        }
+    }
+    @media screen and (max-width: 1200px){
+        .logo{
+            content: url(../../../assets/img/logo-sm.png);
+        }
+    }
+    @media screen and (max-width: 768px){
+        .hidden-list {
+            display: none;
+        }
+        .section-item:hover .hidden-list {
+            display: block; 
+        }
+    }
+    @media screen and (max-width: 576px){
+        .nav-footer{
+            display: none;
+        }
+        .dropstart{
+            display: flex;
         }
     }
 }

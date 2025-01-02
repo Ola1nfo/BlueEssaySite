@@ -16,6 +16,7 @@
     }
     @media screen and (max-width: 768px){
         height: 100%;
+        margin-bottom: -250px;
     }
     .raketa-bg{
         position: absolute;
@@ -176,6 +177,21 @@
                         top: 180px;
                         left: 25px;
                     }
+                    @media screen and (max-width: 768px){
+                        top: 115px;
+                    }
+                    @media screen and (max-width: 444px){
+                        top: 150px;
+                    }
+                    @media screen and (max-width: 386px){
+                        top: 185px;
+                    }
+                    @media screen and (max-width: 296px){
+                        top: 215px;
+                    }
+                    @media screen and (max-width: 277px){
+                        top: 250px;
+                    }
                 }
                 .scissors-text{
                     border: 3px dashed #ffffff;
@@ -228,6 +244,11 @@
                         text-align: center;
                         margin-top: -10px;
                         margin-bottom: 20px;
+                    }
+                    @media screen and (max-width: 312px){
+                        .prozent{
+                            font-size: 48px;
+                        }
                     }
                 }
                 .balloon{
@@ -296,6 +317,9 @@
         }
         .raketa-bg{
             display: none;
+        }
+        .second-block{
+            margin-bottom: -250px;
         }
     }
 }

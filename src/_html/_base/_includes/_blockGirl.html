@@ -1,46 +1,47 @@
 <div class="container-fluid blockGirl">
     <div class="container">
         <div class="row main-text">
-            <div class="col-7">
+            <div class="col-md-7 col-12">
                 <h1>BlueEssaySite.net - <br> <span>expert help for custom Written</span></h1>
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-10">
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized</p>
-                        <button>place an order</button>
+                        <div class="button-border">
+                            <button>place an order</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-1"></div>
-            <div class="col-4">
+            <div class="col-md-5 col-12">
                 <img class="girl" src="../../../assets/img/girl.png" alt="girl">
             </div>
         </div>
-        <div class="blue-line">
-            <div>
+        <div class="row blue-line">
+            <div class="col-lg-2 col-6">
                 <p>Type of paper</p>
                 <select>
                     <option value="">Placeholder text</option>
                 </select>
             </div>
-            <div>
+            <div class="col-lg-2 col-6">
                 <p>Writer level</p>
                 <select>
                     <option value="">High school</option>
                 </select>
             </div>
-            <div>
+            <div class="col-lg-2 col-6">
                 <p>Urgency </p>
                 <select>
                     <option value="">21 days</option>
                 </select>
             </div>
-            <div class="plus-minus">
+            <div class="plus-minus col-lg-3 col-6">
                 <div
                     class="counter"
-                    style="display: flex; align-items: center; border: 1px solid #ddd; border-radius: 5px; background-color: #f7f7f7; overflow: hidden; width: 120px; justify-content: space-between;"
+                    style="display: flex; align-items: center; border: 1px solid #ddd; border-radius: 5px; background-color: #f7f7f7; overflow: hidden; justify-content: space-between;"
                 >
                     <button
                     onclick="this.nextElementSibling.innerText = Math.max(Number(this.nextElementSibling.innerText) - 1, 0)"
@@ -62,7 +63,7 @@
                     >+</button>
                 </div>
             </div>
-            <button class="continue">Continue</button>
+            <button class="continue col-lg-3 col-12">Continue</button>
         </div>
     </div>
 </div>
