@@ -5,6 +5,15 @@
     background-repeat: repeat-x;
     padding-top: 100px;
     height: 620px;
+    animation: moveBackground 25s linear infinite;
+    @keyframes moveBackground {
+        0% {
+            background-position: 0 bottom;
+        }
+        100% {
+            background-position: 100% bottom;
+        }
+    }
 }
 .blockGirl .main-text h1{
     font-size: 47px;

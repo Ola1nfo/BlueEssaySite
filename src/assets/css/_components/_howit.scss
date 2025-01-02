@@ -29,6 +29,15 @@
         .step{
             padding: 40px;
             position: relative;
+            animation: bounce 2s infinite ease-in-out;
+            @keyframes bounce {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-20px);
+                }
+            }
     
             img{
                 padding-bottom: 30px;
@@ -50,6 +59,16 @@
                 text-align: center;
             }
             
+        }
+    }
+    @media screen and (max-width: 576px){
+        .arrow_step{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 992px){
+        .arrow_step2{
+            display: none;
         }
     }
 }
