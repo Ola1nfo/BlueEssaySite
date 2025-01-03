@@ -112,7 +112,7 @@ footer{
         padding-right: 20px;   
         @media screen and (max-width: 576px){
             width: 50px;
-            height: 35px;
+            height: 30px;
         }    
     }
     .phone-text{
@@ -151,6 +151,9 @@ footer{
             font-family: "Poppins-Bold";
             @media screen and (max-width: 1200px){
                 font-size: 12px;
+            }
+            @media screen and (max-width: 250px){
+                font-size: 10px;
             }
         }
         @media screen and (max-width: 992px){

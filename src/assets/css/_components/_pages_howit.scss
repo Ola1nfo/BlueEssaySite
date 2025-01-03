@@ -70,6 +70,15 @@
                     font-family: "Poppins-Regular";
                     text-align: center;
                 } 
+                @media screen and (max-width: 1200px){
+                    height: 350px;
+                }
+                @media screen and (max-width: 992px){
+                    margin-top: 0;
+                }
+                @media screen and (max-width: 310px){
+                    height: 440px;
+                }
             }
             .step1::before {
                 content: '';
@@ -81,6 +90,9 @@
                 height: 24px; 
                 background: #fff; 
                 z-index: 1;
+                @media screen and (max-width: 992px){
+                    display: none;
+                }
             }
             .step1::after {
                 content: '';
@@ -96,6 +108,9 @@
                 transform: translateY(-50%) rotate(-45deg); 
                 background: transparent; 
                 z-index: 2; 
+                @media screen and (max-width: 992px){
+                    display: none;
+                }
             }
             .step1:hover::after{
                 width: 22px; 
@@ -114,6 +129,9 @@
                 height: 24px; 
                 background: #fff; 
                 z-index: 1;
+                @media screen and (max-width: 992px){
+                    display: none;
+                }
             }
             .step3::after {
                 content: '';
@@ -129,6 +147,9 @@
                 transform: translateY(-50%) rotate(135deg); 
                 background: transparent; 
                 z-index: 2; 
+                @media screen and (max-width: 992px){
+                    display: none;
+                }
             }
             .step3:hover::after{
                 width: 22px; 
@@ -287,6 +308,10 @@
                         vertical-align: super;
                         font-size: 40px;
                     }
+                    @media screen and (max-width: 992px){
+                        display: flex;
+                        flex-direction: column;
+                    }
                 }
                 .under{
                     font-size: 14px;
@@ -298,6 +323,9 @@
                     margin-top: -10px;
                     margin-bottom: 300px;
                     text-transform: uppercase;
+                }
+                @media screen and (max-width: 992px){
+                    height: 100%;
                 }
             }
             .raketa{
@@ -366,6 +394,13 @@
                 }
             }
         }
+        .wavy-circle-main{
+            @media screen and (max-width: 300px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
         .wavy-circle {
             width: 130px;
             height: 130px;
@@ -402,6 +437,14 @@
                     transform: rotate(360deg);
                 }
             } 
+            @media screen and (max-width: 992px){
+                width: 115px;
+                height: 115px;
+            }
+            }
+            @media screen and (max-width: 992px){
+                width: 100px;
+                height: 100px;
             }
         }
         .wavy-circle1{

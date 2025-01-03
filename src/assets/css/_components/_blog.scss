@@ -8,6 +8,13 @@
         font-weight: 400;
         text-transform: capitalize;
         font-family: "Poppins-Medium";
+        @media screen and (max-width: 992px){
+            display: flex;
+            margin-right: -30px;
+        }
+        @media screen and (max-width: 768px){
+            margin-bottom: -60px;
+        }
     }
     .active{
         font-size: 14px;
@@ -21,6 +28,9 @@
         .progress-bar{
             background-color: $bg-btn2;
         }
+        @media screen and (max-width: 992px){
+            display: none;
+        }
     }
     .blog-link{
         display: flex;
@@ -31,6 +41,10 @@
             img{
                 width: 60px;
                 height: 60px;
+                @media screen and (max-width: 768px){
+                    width: 40px;
+                    height: 40px;
+                }
             }
         }
         .twitter{
@@ -38,6 +52,10 @@
             img{
                 width: 60px;
                 height: 60px;
+                @media screen and (max-width: 768px){
+                    width: 40px;
+                    height: 40px;
+                }
             }
         }
         .pinterest{
@@ -45,6 +63,10 @@
             img{
                 width: 60px;
                 height: 60px;
+                @media screen and (max-width: 768px){
+                    width: 40px;
+                    height: 40px;
+                }
             }
         }
         .google-plus{
@@ -52,6 +74,10 @@
             img{
                 width: 60px;
                 height: 60px;
+                @media screen and (max-width: 768px){
+                    width: 40px;
+                    height: 40px;
+                }
             }
         }
         .heart{
@@ -86,6 +112,13 @@
                 line-height: 14px;
                 color: $bg-color-blue;
                 font-family: "Poppins-Regular";
+                @media screen and (max-width: 768px){
+                    margin-top: -10px;
+                }
+            }
+            @media screen and (max-width: 768px){
+                width: 40px;
+                height: 40px;
             }
         }
         .eye{
@@ -118,6 +151,13 @@
                 line-height: 14px;
                 color: $bg-color-blue;
                 font-family: "Poppins-Regular";
+                @media screen and (max-width: 768px){
+                    margin-top: -10px;
+                }
+            }
+            @media screen and (max-width: 768px){
+                width: 40px;
+                height: 40px;
             }
         }
     }
@@ -157,6 +197,15 @@
             color: $bg-btn2;
             font-weight: 500;
             font-family: "Poppins-Medium";
+            @media screen and (max-width: 250px){
+                display: none;
+            }
+        }
+        .continue-reading-img{
+            color: $bg-btn2;
+            @media screen and (max-width: 250px){
+                display: flex;
+            }
         }
         hr{
             height: 2px;
@@ -172,13 +221,30 @@
                 color: #a3a6a9;
                 font-weight: 500;
                 font-family: "Poppins-Regular";
+                @media screen and (max-width: 992px){
+                    font-size: 10px;
+                    margin-right: -10px;
+                }
+                @media screen and (max-width: 768px){
+                    margin-right: -20px;
+                }
             }
             .active-pag{
                 color: #fff;
                 width: 30px;
                 height: 30px;
-                border-radius: 50px;
+                border-radius: 50%;
                 background-color: $bg-color-blue;
+                z-index: 1;
+                @media screen and (max-width: 992px){
+                    width: 20px;
+                    height: 23px;
+                }
+                @media screen and (max-width: 768px){
+                    width: 10px;
+                    height: 23px;
+                    margin-right: -10px;
+                }
             }
         }
     }

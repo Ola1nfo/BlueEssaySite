@@ -31,6 +31,9 @@
         font-weight: 400;
         font-family: "Poppins-Medium";
         position: relative;
+        @media screen and (max-width: 992px){
+            display: flex;
+        }
     }
     .nav-link::after{
         content: '>';

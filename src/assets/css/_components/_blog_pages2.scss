@@ -4,6 +4,9 @@
         .progress-bar{
             background-color: $bg-btn2;
         }
+        @media screen and (max-width: 992px){
+            display: none;
+        }
     }
     .img-blog{
         width: 100%;
@@ -39,6 +42,9 @@
         .line-down-data{
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width: 400px){
+                flex-direction: column;
+            }
             .line-down-views{
                 display: flex;
                 p{
@@ -62,6 +68,9 @@
                 color: #a3a6a9;
                 padding-right: 30px;
                 font-size: 17px;
+                @media screen and (max-width: 300px){
+                    padding-right: 15px;
+                }
             }
         }
     }
@@ -99,13 +108,30 @@
             color: #a3a6a9;
             font-weight: 500;
             font-family: "Poppins-Regular";
+            @media screen and (max-width: 992px){
+                font-size: 10px;
+                margin-right: -10px;
+            }
+            @media screen and (max-width: 768px){
+                margin-right: -20px;
+            }
         }
         .active-pag{
             color: #fff;
             width: 30px;
             height: 30px;
-            border-radius: 50px;
+            border-radius: 50%;
             background-color: $bg-color-blue;
+            z-index: 1;
+            @media screen and (max-width: 992px){
+                width: 20px;
+                height: 23px;
+            }
+            @media screen and (max-width: 768px){
+                width: 10px;
+                height: 23px;
+                margin-right: -10px;
+            }
         }
     }
 }
