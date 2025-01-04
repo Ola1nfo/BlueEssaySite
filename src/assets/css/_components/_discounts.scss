@@ -130,6 +130,9 @@
                     }
                 }
             }
+            @media screen and (max-width: 768px){
+                margin-top: -200px;
+            }
         }
         .second-block{
             background-color: $bg-color-blue;
